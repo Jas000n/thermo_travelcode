@@ -8,7 +8,7 @@ import numpy as np
 
 def send_image(img, type):
     '''
-    type:1表示发送行程卡 2表示发送健康码
+    type:1表示发送行程卡 2
     '''
     img = cv2.resize(img, (640, 640))
     client = socket.socket()  # 创建 socket 对象
