@@ -8,7 +8,7 @@
 
 ![travelcode_thermo ](./pics/travelcode_thermo.png)
 
-<img src="pics/out.jpeg"  style="zoom:20%; " />
+<img src="pics/out.jpeg"  style="zoom:5%; " />
 
 <center>
 开发的嵌入式疫情防控机器人</center>
@@ -57,9 +57,10 @@ Vir = A(T_o^4 + T_a^4)
 
 <img src="./pics/compensate.png" style="zoom: 50%;" />
 
-用距离传感器测出MLX90614与人脸的距离d，已知视场角为$2\theta$，人脸的大概大小为S。测出来的环境温度为$T_环$，测出的视场内的平均温度为$T_测$，估计的人脸温度为$T_脸$，所以可以得到如下温度对应关系：
+使用距离传感器测量MLX90614与人脸的距离 \(d\)，已知视场角为 \(2\theta\)，人脸的大概大小为 \(S\)。测出来的环境温度为 \(T_{\text{环}}\)，测出的视场内的平均温度为 \(T_{\text{测}}\)，估计的人脸温度为 \(T_{\text{脸}}\)，可以得到如下温度对应关系：
 
 给定测量温度 \(T_{\text{测}}\)，环境温度 \(T_{\text{环}}\) 和传感器的特定参数，我们有：
+
 
 ```math
 \pi (\tan \theta \cdot d)^2 \cdot T_{\text{测}} = S \cdot T_{\text{脸}} + \left(\pi (\tan \theta \cdot d)^2 - S\right) \cdot T_{\text{环}}
@@ -87,7 +88,7 @@ Vir = A(T_o^4 + T_a^4)
 
 #### 2.4 超声波测距传感器
 
-<img src="./pics/OIP.jpeg" width=200 />
+<img src="./pics/OIP.jpeg" width=50 />
 
 计划使用HC-SR04进行机器与人脸的距离测量，实现上面2.2.3所说的温度补偿算法。
 
